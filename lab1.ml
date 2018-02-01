@@ -176,11 +176,11 @@ code below to define exercise6 to be the square_all function applied
 to the list containing the elements 3, 4, and 5? You'll want to
 replace the "[]" with the correct functional call.
 ......................................................................*)
+let square_all : int list -> int list =
+  map (fun x -> x * x)
+   ;;
 
-let square_all (lst : int list) : int list =
-  failwith "square_all not implemented" ;;
-
-let exercise6 = [] ;;
+let exercise6 = square_all [3; 4; 5] ;;
 
 (*......................................................................
 Exercise 7: Define a recursive function that sums an integer
